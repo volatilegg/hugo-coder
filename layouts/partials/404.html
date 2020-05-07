@@ -4,7 +4,7 @@
     <h2>{{ i18n "page_not_found" }}</h2>
     {{ if and (isset .Site.Params "notfoundurl") (not (isset .Site.Params "gravatar")) }}
       {{ with .Site.Params.notfoundurl }}
-        <div><img src="{{ . | relURL }}" alt="avatar"></div>
+        <div class="avatar"><img src="{{ . | relURL }}" alt="ninja404"></div>
       {{ end }}
     {{ end }}
     <p>{{ i18n "page_does_not_exist" }}<br />{{ i18n "head_back" .Site.BaseURL | safeHTML }}</p>
